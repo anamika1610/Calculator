@@ -1,0 +1,146 @@
+<div class="container-fluid">
+  <div class="jumbotron col-sm-4 p-2 m-0 bg-inverse">
+    <h1 class="text-center"> Calculator</h1>
+
+    <h5>User Input</h5>
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+      <div class="col-sm-12 form-control text-lg-right" type="text">
+        {{ input }}
+      </div>
+    </div>
+    <h5>Result -</h5>
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+      <div class="form-control text-sm-right" type="text">{{ result }}</div>
+    </div>
+
+    <div class="col-sm-12 p-1 m-0">
+      <button class="btn btn-info col-sm-6" type="button" (click)="ClrBtn()">
+        C
+      </button>
+      <button class="btn btn-warning col-sm-3" type="button" (click)="clr()">
+        <-
+      </button>
+      <button
+        class="btn btn-secondary col-sm-3"
+        type="button"
+        (click)="clickoperatorbtn('/')"
+      >
+        /
+      </button>
+    </div>
+
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('7')"
+      >
+        7
+      </button>
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('8')"
+      >
+        8
+      </button>
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('9')"
+      >
+        9
+      </button>
+      <button
+        class="btn btn-lg btn-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clickoperatorbtn('*')"
+      >
+        X
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('4')"
+      >
+        4
+      </button>
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('5')"
+      >
+        5
+      </button>
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('6')"
+      >
+        6
+      </button>
+      <button
+        class="btn btn-lg btn-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clickoperatorbtn('-')"
+      >
+        -
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('1')"
+      >
+        1
+      </button>
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('2')"
+      >
+        2
+      </button>
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('3')"
+      >
+        3
+      </button>
+      <button
+        class="btn btn-lg btn-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clickoperatorbtn('+')"
+      >
+        +
+      </button>
+    </div>
+    <div class="col-sm-12 p-1 m-0">
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('.')"
+      >
+        .
+      </button>
+      <button
+        class="btn btn-lg btn-outline-secondary col-sm-3 p-1"
+        type="button"
+        (click)="clicknumber('0')"
+      >
+        0
+      </button>
+      <button
+        class="btn btn-lg btn-success col-sm-6 p-1"
+        type="button"
+        (click)="getAnswer()"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
